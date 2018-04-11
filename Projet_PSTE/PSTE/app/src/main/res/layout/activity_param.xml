@@ -24,10 +24,22 @@
             android:textSize="18sp"
             android:text="Quelle distance avez vous à parcourrir ?"/>
         <EditText
+            android:id="@+id/distance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:hint="Distance"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Combien de temps va durer le trajet ?"/>
+        <EditText
+            android:id="@+id/duree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:hint="Durée"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,14 +50,14 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <RadioButton
+                android:id="@+id/yesnuit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/yesnuit"
                 android:text="Oui"/>
             <RadioButton
+                android:id="@+id/nonuit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/nonuit"
                 android:text="Non"/>
         </RadioGroup>
         <TextView
@@ -58,18 +70,16 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <RadioButton
+                android:id="@+id/nosleep"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/nosleep"
                 android:text="Reposé"/>
             <RadioButton
+                android:id="@+id/yessleep"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/yessleep"
                 android:text="Fatigué"/>
         </RadioGroup>
-
-
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
