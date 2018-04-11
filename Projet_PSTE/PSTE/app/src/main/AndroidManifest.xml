@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Param" />
-        <activity android:name=".choix_modules"></activity>
+        <activity android:name=".choix_modules" />
+        <activity android:name=".opt_aff"></activity>
     </application>
 
 </manifest>
