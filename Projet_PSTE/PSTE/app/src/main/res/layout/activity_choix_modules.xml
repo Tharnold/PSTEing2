@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".choix_modules">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingBottom="30dp"
+            android:text="Choix des modules"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="15dp"
+            android:text="Veuillez choisir les modules que vous voulez :"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/calculs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculs simples"/>
+            <CheckBox
+                android:id="@+id/cultureg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Culture générale"/>
+            <CheckBox
+                android:id="@+id/musique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choix de musique"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
