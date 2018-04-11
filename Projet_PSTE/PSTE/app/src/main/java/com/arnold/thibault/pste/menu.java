@@ -17,6 +17,7 @@ public class menu extends AppCompatActivity {
 
     //private Button lancer_trajet;
     private Button options_trajet;
+    private Button choix_modules;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,17 @@ public class menu extends AppCompatActivity {
             public void onClick(View view) {
                 Intent opttrajet = new Intent(getApplicationContext(), Param.class);
                 startActivity(opttrajet);
+                finish();
+            }
+        });
+
+        this.choix_modules = findViewById(R.id.choix_modules);
+
+        choix_modules.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent chxmodules = new Intent(getApplicationContext(), choix_modules.class);
+                startActivity(chxmodules);
                 finish();
             }
         });
